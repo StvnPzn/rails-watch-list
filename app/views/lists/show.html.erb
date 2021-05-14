@@ -12,6 +12,9 @@
     <div class="card-bookmark-infos">
       <h2><%= bookmark.movie.title %></h2>
       <p><%= bookmark.comment %></p>
+      <%= link_to list_bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" }, :class => "card-remove-link" do %>
+        <i class="fas fa-trash"></i>
+      <% end %>
     </div>
   </div>
   <% end %>
