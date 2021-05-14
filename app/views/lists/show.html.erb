@@ -1,0 +1,18 @@
+<div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1590452522688-e919e18c9e96?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80)">
+  <div class="container-show">
+    <h1><%= @list.name %></h1>
+    <%= link_to 'Add a movie', new_list_bookmark_path(@list.id), :class => "btn btn-flat-show" %>
+  </div>
+</div>
+
+<div class="container-bookmark">
+  <% @list.bookmarks.each do |bookmark| %>
+  <div class="card-bookmark">
+    <img src="<%= bookmark.movie.poster_url %>" />
+    <div class="card-bookmark-infos">
+      <h2><%= bookmark.movie.title %></h2>
+      <p><%= bookmark.comment %></p>
+    </div>
+  </div>
+  <% end %>
+</div>

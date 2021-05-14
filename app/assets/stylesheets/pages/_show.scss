@@ -1,0 +1,74 @@
+.banner-show {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner-show h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-flat-show {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: rgb(153,40,44);
+  transition: background 0.3s ease;
+  margin: 10px 0;
+}
+
+.btn-flat-show:hover {
+  background: rgb(202,113,117);
+  color: white;
+}
+
+.container-bookmark {
+  width: 1000px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-bookmark {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px 10px;
+  width: 30%;
+}
+
+.card-bookmark > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-bookmark h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-bookmark p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-bookmark .card-bookmark-infos {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}

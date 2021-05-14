@@ -23,7 +23,7 @@ url = 'http://tmdb.lewagon.com/movie/top_rated?'
 list_serialized = URI.open(url).read
 lists = JSON.parse(list_serialized)
 
-puts "Add 10 by API"
+puts "Add 15 by API"
 lists["results"].last(15).each do |movie|
   Movie.create!(
     title: movie["title"],
