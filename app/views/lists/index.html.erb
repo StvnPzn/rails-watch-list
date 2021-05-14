@@ -7,7 +7,7 @@
 
 <div class="container cards-container">
   <% @lists.each do |list| %>
-    <div class="card-product">
+    <div class="card-product" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path list.photo.key, height: 300, crop: :fill %>)">
       <div class="card-product-infos">
         <h2><%= link_to list.name, list_path(list.id) %></h2>
       </div>
